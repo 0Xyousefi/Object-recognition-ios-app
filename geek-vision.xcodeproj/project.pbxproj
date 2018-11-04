@@ -8,20 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		152879EC1F810C5200438DAC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152879EB1F810C5200438DAC /* AppDelegate.swift */; };
-		152879EE1F810C5200438DAC /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152879ED1F810C5200438DAC /* ViewController.swift */; };
+		152879EE1F810C5200438DAC /* CameraVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 152879ED1F810C5200438DAC /* CameraVC.swift */; };
 		152879F11F810C5200438DAC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152879EF1F810C5200438DAC /* Main.storyboard */; };
 		152879F31F810C5200438DAC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 152879F21F810C5200438DAC /* Assets.xcassets */; };
 		152879F61F810C5200438DAC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 152879F41F810C5200438DAC /* LaunchScreen.storyboard */; };
+		15287A011F81191400438DAC /* RoundedShadowView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15287A001F81191400438DAC /* RoundedShadowView.swift */; };
+		15287A031F811B6D00438DAC /* RoundedShadowButtom.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15287A021F811B6D00438DAC /* RoundedShadowButtom.swift */; };
+		15287A061F811BF900438DAC /* RoundedShadowimageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 15287A051F811BF900438DAC /* RoundedShadowimageView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		150072701F8134D8008FCA9D /* SqueezeNet.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = SqueezeNet.mlmodel; sourceTree = "<group>"; };
 		152879E81F810C5200438DAC /* geek-vision.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "geek-vision.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		152879EB1F810C5200438DAC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		152879ED1F810C5200438DAC /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		152879ED1F810C5200438DAC /* CameraVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraVC.swift; sourceTree = "<group>"; };
 		152879F01F810C5200438DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		152879F21F810C5200438DAC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		152879F51F810C5200438DAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		152879F71F810C5200438DAC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		15287A001F81191400438DAC /* RoundedShadowView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowView.swift; sourceTree = "<group>"; };
+		15287A021F811B6D00438DAC /* RoundedShadowButtom.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowButtom.swift; sourceTree = "<group>"; };
+		15287A051F811BF900438DAC /* RoundedShadowimageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoundedShadowimageView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -54,14 +61,42 @@
 		152879EA1F810C5200438DAC /* geek-vision */ = {
 			isa = PBXGroup;
 			children = (
+				152879FF1F810F3900438DAC /* Resources */,
+				152879FE1F810F2B00438DAC /* view */,
+				152879FD1F810F0E00438DAC /* Controller */,
 				152879EB1F810C5200438DAC /* AppDelegate.swift */,
-				152879ED1F810C5200438DAC /* ViewController.swift */,
 				152879EF1F810C5200438DAC /* Main.storyboard */,
 				152879F21F810C5200438DAC /* Assets.xcassets */,
 				152879F41F810C5200438DAC /* LaunchScreen.storyboard */,
 				152879F71F810C5200438DAC /* Info.plist */,
 			);
 			path = "geek-vision";
+			sourceTree = "<group>";
+		};
+		152879FD1F810F0E00438DAC /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				152879ED1F810C5200438DAC /* CameraVC.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		152879FE1F810F2B00438DAC /* view */ = {
+			isa = PBXGroup;
+			children = (
+				15287A001F81191400438DAC /* RoundedShadowView.swift */,
+				15287A021F811B6D00438DAC /* RoundedShadowButtom.swift */,
+				15287A051F811BF900438DAC /* RoundedShadowimageView.swift */,
+			);
+			path = view;
+			sourceTree = "<group>";
+		};
+		152879FF1F810F3900438DAC /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				150072701F8134D8008FCA9D /* SqueezeNet.mlmodel */,
+			);
+			path = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,8 +171,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				152879EE1F810C5200438DAC /* ViewController.swift in Sources */,
+				152879EE1F810C5200438DAC /* CameraVC.swift in Sources */,
+				15287A061F811BF900438DAC /* RoundedShadowimageView.swift in Sources */,
 				152879EC1F810C5200438DAC /* AppDelegate.swift in Sources */,
+				15287A031F811B6D00438DAC /* RoundedShadowButtom.swift in Sources */,
+				15287A011F81191400438DAC /* RoundedShadowView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -281,7 +319,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "pro.yousefi.geek-vision";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -296,7 +334,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = "pro.yousefi.geek-vision";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
